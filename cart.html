@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./public/food-makers-high-resolution-logo-transparent.png">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="./style/cart-action-buttons.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <div class="nav">
+        <div id="nav-logo">
+            <a href="./index.html">
+                <img src="./public/food-makers-high-resolution-logo-transparent.png" alt="Logo Food Makers">
+            </a>
+        </div>
+        <div id="nav-actions">
+            <a href="./index.html">Produtos</a>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart-product-list">
+            <div class="product-cart-card">
+                <div class="product-cart-card-image">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="product-cart-card-info">
+                    <p id="product-cart-title">Xis Salada</p>
+                    <p id="product-cart-price">R$ 24,90</p>
+                    <p id="product-cart-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                    <div class="product-cart-card-actions">
+                        <button onclick="removeProduct(this)" class="product-cart-card-action-button cart-action-button" style="color: red;">-</button>
+                        <span id="amount">1</span>
+                        <button class="product-cart-card-action-button cart-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-card">
+                <div class="product-cart-card-image">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="product-cart-card-info">
+                    <p id="product-cart-title">Xis Salada</p>
+                    <p id="product-cart-price">R$ 24,90</p>
+                    <p id="product-cart-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                    <div class="product-cart-card-actions">
+                        <button onclick="removeProduct(this)" class="product-cart-card-action-button cart-action-button" style="color: red;">-</button>
+                        <span id="amount">1</span>
+                        <button class="product-cart-card-action-button cart-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-card">
+                <div class="product-cart-card-image">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="product-cart-card-info">
+                    <p id="product-cart-title">Xis Salada</p>
+                    <p id="product-cart-price">R$ 24,90</p>
+                    <p id="product-cart-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                    <div class="product-cart-card-actions">
+                        <button onclick="removeProduct(this)" class="product-cart-card-action-button cart-action-button" style="color: red;">-</button>
+                        <span id="amount">1</span>
+                        <button class="product-cart-card-action-button cart-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-card">
+                <div class="product-cart-card-image">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="product-cart-card-info">
+                    <p id="product-cart-title">Xis Salada</p>
+                    <p id="product-cart-price">R$ 24,90</p>
+                    <p id="product-cart-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                    <div class="product-cart-card-actions">
+                        <button onclick="removeProduct(this)" class="product-cart-card-action-button cart-action-button" style="color: red;">-</button>
+                        <span id="amount">1</span>
+                        <button class="product-cart-card-action-button cart-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-card">
+                <div class="product-cart-card-image">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="product-cart-card-info">
+                    <p id="product-cart-title">Xis Salada</p>
+                    <p id="product-cart-price">R$ 24,90</p>
+                    <p id="product-cart-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                    <div class="product-cart-card-actions">
+                        <button onclick="removeProduct(this)" class="product-cart-card-action-button cart-action-button" style="color: red;">-</button>
+                        <span id="amount">1</span>
+                        <button class="product-cart-card-action-button cart-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-card">
+                <div class="product-cart-card-image">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="product-cart-card-info">
+                    <p id="product-cart-title">Xis Salada</p>
+                    <p id="product-cart-price">R$ 24,90</p>
+                    <p id="product-cart-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                    <div class="product-cart-card-actions">
+                        <button onclick="removeProduct(this)" class="product-cart-card-action-button cart-action-button" style="color: red;">-</button>
+                        <span id="amount">1</span>
+                        <button class="product-cart-card-action-button cart-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cart-card">
+                <div class="product-cart-card-image">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                </div>
+                <div class="product-cart-card-info">
+                    <p id="product-cart-title">Xis Salada</p>
+                    <p id="product-cart-price">R$ 24,90</p>
+                    <p id="product-cart-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                    <div class="product-cart-card-actions">
+                        <button onclick="removeProduct(this)" class="product-cart-card-action-button cart-action-button" style="color: red;">-</button>
+                        <span id="amount">1</span>
+                        <button class="product-cart-card-action-button cart-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-form">
+            <form class="order-form-inputs">
+                <label for="name">Nome *</label>
+                <input type="text" id="name-field" placeholder="Nome">
+                <label for="phone">Telefone *</label>
+                <input type="text" id="phone-field" placeholder="(99) 9999-9999">
+                <label for="cupom">Cupom</label>
+                <input type="text" id="cupon-field" placeholder="Cupom">
+                <label for="address">Endereço *</label>
+                <textarea name="address" id="address-field"></textarea>
+                <label for="observations">Observações</label>
+                <textarea name="observations" id="observation-field"></textarea>
+                <label for="paymentMethod">Método De Pagamento *</label>
+                <select name="paymentMethod" id="paymentMethod-field">
+                    <option value="0">Pix</option>
+                    <option value="1">Cartão de Crédito</option>
+                </select>
+                <span>Total R$ 87,30</span>
+                <button type="button" onclick="proceedCheckout(this)">Finalizar Pedido</button>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/AddToCart.js"></script>
+    <script src="./scripts/Cart.js"></script>
+</body>
+</html>

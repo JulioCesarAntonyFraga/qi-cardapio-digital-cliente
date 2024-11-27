@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="./public/food-makers-high-resolution-logo-transparent.png">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/product-details.css">
+    <link rel="stylesheet" href="./style/carousel.css">
+    <title>Detalhes Do Produto</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div id="nav-logo">
+                <a href="./index.html">
+                    <img src="./public/food-makers-high-resolution-logo-transparent.png" alt="Logo Food Makers">
+                </a>
+            </div>
+            <div id="nav-actions">
+                <a href="./index.html">Produtos</a>
+                <a href="./cart.html"><img style="width: 40px; height: 40px;" src="./public/shopping-cart.png" alt="Shopping Cart"></a>
+            </div>
+        </div>
+        <div class="product-details-card">
+            <div class="product-details-card-image">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://placehold.co/600x400" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://placehold.co/600x400" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://placehold.co/600x400" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="product-details-card-info">
+                <p id="product-details-title">Xis Salada</p>
+                <p id="product-details-price">R$ 24,90</p>
+                <p id="product-details-description">Xis com uma carne, maionese, ervilha, milho, tomate e alface</p>
+                <div class="product-details-card-actions">
+                    <button onclick="removeProduct(this)" class="product-details-card-action-button" style="color: red;">-</button>
+                    <span id="amount"> 0 </span>
+                    <button class="product-details-card-action-button" onclick="addProduct(this)" style="color: greenyellow;">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/AddToCart.js"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+         showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

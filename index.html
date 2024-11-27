@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./public/food-makers-high-resolution-logo-transparent.png">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/product-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div id="nav-logo">
+                <a href="./index.html">
+                    <img src="./public/food-makers-high-resolution-logo-transparent.png" alt="Logo Food Makers">
+                </a>
+            </div>
+            <div id="nav-actions">
+                <a href="./index.html">Produtos</a>
+                <a href="./cart.html"><img style="width: 40px; height: 40px;" src="./public/shopping-cart.png" alt="Shopping Cart"></a>
+            </div>
+        </div>
+        <div class="list-header">
+            <div class="list-header-title-container">
+                <h1 id="list-header-title">Produtos</h1>
+                <p id="list-header-category-description">Lanches</p>
+            </div>
+            <div class="list-header-filters-container">
+                <p>Categorias</p>
+                <select name="Categorias" id="categories-select">
+                    <option value="0">Lanches</option>
+                    <option value="1">Bebidas</option>
+                    <option value="2">Porções</option>
+                    <option value="3">Pizza</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="./product-details.html" class="product-card-body">
+                    <img class="product-card-image" src="https://placehold.co/600x400" alt="">
+                    <p class="product-card-name">Xis Calabresa</p>
+                    <p class="product-card-price">R$ 22,75</p>
+                    <span class="product-card-description">Xis Calabresa com Tomate, Alface, milho, ervilha e carne</span>
+                </a>
+                <div class="product-card-actions">
+                    <button onclick="removeProduct(this)" class="product-card-action-button" style="color: red;">-</button>
+                    <span id="amount">0</span>
+                    <button class="product-card-action-button" style="color: greenyellow;" onclick="addProduct(this)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/AddToCart.js"></script>
+</body>
+</html>
