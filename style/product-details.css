@@ -35,6 +35,23 @@
         display: inline-block;
     }
 }
+@media only screen and (max-width: 400px) {
+    .product-details-card{
+        margin: auto !important;
+    }
+    .product-details-card-info{
+        padding-top: 0 !important;
+    }
+    #product-details-title{
+        font-size: 20px !important;
+    }
+    #product-details-price{
+        font-size: 42px !important;
+    }
+    #product-details-description{
+        font-size: 14px !important;
+    }
+}
 .product-details-card-info{
     width: 50%;
     padding: 90px 60px 90px 60px;
