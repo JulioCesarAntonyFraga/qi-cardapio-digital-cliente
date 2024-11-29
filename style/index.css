@@ -28,6 +28,30 @@ body{
     display: inline-block;
     /* background-color: green; */
 }
+@media only screen and (max-width: 500px) {
+    .nav div{
+        margin-top: 32px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }   
+    #nav-logo img{
+        width: 70px !important;
+        height: 30px !important;
+        margin-top: 10px;
+    }
+    #nav-actions{
+        gap: 10px !important;
+        /* background-color: blue; */
+    }
+    #nav-actions a{
+        /* background-color: yellow; */
+        font-size: 16px !important;
+    }
+    #nav-actions a img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
 #nav-logo img{
     width: 180px;
     height: 100%;
