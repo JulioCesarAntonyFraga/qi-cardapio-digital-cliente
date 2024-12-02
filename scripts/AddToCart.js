@@ -14,7 +14,7 @@ function addProduct(element){
 
 function removeProduct(element){
     var actionsElement = element.parentNode;
-    var amountElement = actionsElement.querySelector("#amount");;
+    var amountElement = actionsElement.querySelector("#amount");
     var amount = Number(amountElement.innerHTML);
 
     if (amount > 0){
